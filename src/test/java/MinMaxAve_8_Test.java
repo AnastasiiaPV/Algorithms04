@@ -1,4 +1,4 @@
-import org.junit.gen5.api.Assertions;
+import org.junit.jupiter.api.Assertions;
 
 public class MinMaxAve_8_Test {
     //        Test Data:

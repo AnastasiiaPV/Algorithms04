@@ -1,5 +1,5 @@
-import org.junit.gen5.api.Assertions;
-import org.junit.gen5.api.Test;
+import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class PeakElement_10_Test {
 
