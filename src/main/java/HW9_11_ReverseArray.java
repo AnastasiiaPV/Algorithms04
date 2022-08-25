@@ -6,15 +6,15 @@ public class HW9_11_ReverseArray {
      Test Data:
      {2, 7, 3, 10} → {10, 3, 7, 2}
      */
-    public int[] getReverseArray(int[] a) {
-        int[] newArr = new int[a.length];
+    public int[] getReverseArray(int[] array) {
+        int[] result = new int[array.length];
         int count = 0;
 
-        for (int i = a.length - 1; i >= 0; i--) {
-            newArr[count] = a[i];
+        for (int i = array.length - 1; i >= 0; i--) {
+            result[count] = array[i];
             count++;
         }
 
-        return newArr;
+        return result;
     }
 }

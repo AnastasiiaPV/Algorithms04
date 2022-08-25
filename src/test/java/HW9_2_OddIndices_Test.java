@@ -18,4 +18,28 @@ public class HW9_2_OddIndices_Test {
 
         Assertions.assertArrayEquals(expectedResult, actualResult);
     }
+
+    @Test
+    public void testOddIndices_2() {
+        //Task 2
+        int[] input = new int[]{-45, 590, 234, 985, 12, 68};
+        int[] expectedResult = new int[]{590, 985, 68};
+
+        HW9_2_OddIndices oddIndices_2 = new HW9_2_OddIndices();
+        int[] actualResult = oddIndices_2.getOddIndices_2(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
+
+    @Test
+    public void testOddIndices_3() {
+        //Task 2
+        int[] input = new int[]{-45, 590, 234, 985, 12, 68};
+        int[] expectedResult = new int[]{590, 985, 68};
+
+        HW9_2_OddIndices oddIndices_2 = new HW9_2_OddIndices();
+        int[] actualResult = oddIndices_2.getOddIndices_3(input);
+
+        Assertions.assertArrayEquals(expectedResult, actualResult);
+    }
 }

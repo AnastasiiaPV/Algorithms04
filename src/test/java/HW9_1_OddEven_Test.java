@@ -15,8 +15,8 @@ public class HW9_1_OddEven_Test {
         int number = -345;
         String expectedResult = "Odd";
 
-        HW9_1_OddEven as = new HW9_1_OddEven();
-        String actualResult = as.getOddEven(number);
+        HW9_1_OddEven hw9_1_oddEven = new HW9_1_OddEven();
+        String actualResult = hw9_1_oddEven.getOddEven(number);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }
@@ -48,11 +48,11 @@ public class HW9_1_OddEven_Test {
     @Test
     public void testOddEven_4() {
         //Task 1
-        int number = 2147483647 + 1;
+        long number = 2147483648L;
         String expectedResult = "Undefined";
 
         HW9_1_OddEven as = new HW9_1_OddEven();
-        String actualResult = as.getOddEven(number);
+        String actualResult = as.getOddEven((int)number);
 
         Assertions.assertEquals(expectedResult, actualResult);
     }

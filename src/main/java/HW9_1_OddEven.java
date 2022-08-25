@@ -11,12 +11,12 @@ public class HW9_1_OddEven {
      *      222222 →  “Even”
      *      2147483647 + 1 →  “Undefined”*/
     public String getOddEven(int n) {
-        if (n % 2 == 0 || n == 0) {
-            return "Even";
-        } else if (n % 2 != 0) {
-            return "Odd";
-        } else {
+        if (n >= 2147483647L || n <= -2147483648L) {
             return "Undefined";
+        } else if (n % 2 == 0) {
+            return "Even";
+        } else {
+            return "Odd";
         }
     }
 }

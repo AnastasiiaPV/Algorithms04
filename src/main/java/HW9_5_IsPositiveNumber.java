@@ -7,4 +7,8 @@ public class HW9_5_IsPositiveNumber {
     public boolean isPositiveNumber(int a) {
         return a >= 0;
     }
+
+    public boolean isPositiveNumber_1(int a) {
+        return a <= 0 ? true : false;
+    }
 }

@@ -1,4 +1,5 @@
 import org.junit.jupiter.api.Assertions;
+import org.junit.jupiter.api.Test;
 
 public class HW9_8_MinMaxAve_Test {
     //        Test Data:
@@ -8,7 +9,7 @@ public class HW9_8_MinMaxAve_Test {
     //6, 2, 4, 8, 7,-> min=2, max =8 avg = 6
 
 
-   // @Test
+    @Test
     public void testMinMaxAve_1() {
         //Task 8
         int[] input = new int[]{1, 2, 3, 4, 5, 6, 7, 8};
@@ -19,7 +20,7 @@ public class HW9_8_MinMaxAve_Test {
         HW9_8_MinMaxAve minMaxAve_8 = new HW9_8_MinMaxAve();
         int[] actualResult = minMaxAve_8.getMinMaxAve(input, numOne, numTwo);
 
-        Assertions.assertEquals(expectedResult, actualResult);
+        Assertions.assertArrayEquals(expectedResult, actualResult);
     }
 
     // @Test

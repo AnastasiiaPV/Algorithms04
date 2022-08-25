@@ -7,6 +7,7 @@ public class HW9_3_SumArray {
      */
     public int getSumArray(int[] n) {
         int sum = 0;
+
         for (int arg : n) {
             sum += arg;
         }

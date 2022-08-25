@@ -8,7 +8,7 @@ public class HW9_14_SumOfTwo {
      ({4, 3, 7, 12, 5, 2, 9, 4, 12}, 12)  → {{3, 9}, {7, 5}}
      */
     public int[][] getSumOfTwo(int[] arr, int n) {
-        int[][] result = {};
+        int[][] result = {{}};
 
         for (int i = 0; i < arr.length; i++) {
             for (int j = i + 1; j < arr.length; j++) {
@@ -22,7 +22,7 @@ public class HW9_14_SumOfTwo {
                 }
             }
         }
+
         return result;
     }
-
 }
